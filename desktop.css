@@ -1,19 +1,16 @@
 *{
           margin: 0;
           padding: 0;
-}
-body{
-font-family: "Poppins", sans-serif;
-background-color: black;
-
+          box-sizing: border-box;
 }
 
 
 .container{
+font-family: "Poppins", sans-serif;
 background-color: rgb(255, 255, 255);
 max-width: 1440px;
 margin: 0 auto;
-
+padding: 90px 120px 0 120px;
 }
 /* Dark-1 */
 .dark-1{
@@ -95,7 +92,8 @@ height: 414px;
 /* main style */
 
 .flex-container{
-
+margin-left: 160px;
+margin-right: 160px;
 border: 5px solid rgb(221, 209, 209);
 max-width: 1110px;
 margin: 0 auto;
@@ -116,12 +114,12 @@ padding-top: 100px;
 padding-bottom: 30px;
 }
 .card-container{
-max-width: 1147px;
+max-width: 1047px;
 margin: 0 auto;
 display: flex;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
-gap:30px ;
+gap:20px ;
 flex-wrap: wrap;
 flex-direction: row;
 }
@@ -170,7 +168,7 @@ margin-top: 100px;
 }
 .article-container{
 
-max-width: 1210px;
+max-width: 1110px;
 margin: 0 auto;
 
 display: flex;
@@ -203,24 +201,28 @@ display: inline;
 
 /* footer style */
 footer{
-text-align: center;
 background-color: #0A0826;
+}
+.footer{
+max-width: 265px;
+margin: 0 auto;
+text-align: center;
 padding: 50px 0;
 margin-top: 100px;
 }
 
-footer h2{
+.footer h2{
 font-size:1.5rem;
 font-weight: bold;
 color: white;
 
 }
-footer p{
+.footer p{
 font-size: 0.875rem;
 color: #D9DBE1;
 line-height: 24px;
 }
-footer .btn{
+.footer .btn{
 height: 32px;
 width: 32px;
 color: white;
@@ -230,4 +232,53 @@ font-size: 1rem;
 border-radius: 50%;
 margin: 10px;
 cursor: pointer;
+}
+
+
+/* responsive device */
+@media screen and (max-width:576px) {
+          body{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          }
+          .container{
+          padding: 10px;
+          margin: 10px;
+          }
+          nav,nav ul,
+          .flex-container
+          ,.card-container
+          ,.article-container{
+          flex-direction: column;
+          }
+          nav ul li{
+          margin: 10px;
+          }
+          .banner{
+          flex-direction: column-reverse;
+          }
+          .banner-right img{
+          margin-top: 30px;
+          height: 100%;
+          width: 100%;
+          
+          }
+ .flex-container{
+text-align: center;
+gap: 20px;
+ }
+
+ .article-container{
+gap: 20px;
+ }
+ .article-left img{
+width: 100%;
+height: 100%;
+ }
+ 
+
+
+
+
 }
