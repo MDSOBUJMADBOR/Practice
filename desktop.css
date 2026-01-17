@@ -5,6 +5,7 @@
 body{
 font-family: "Poppins", sans-serif;
 background-color: black;
+
 }
 
 
@@ -52,3 +53,57 @@ padding: 2px;
 }
 
 /* banner style */
+.banner{
+margin-top: 80px;
+display: flex;
+align-items: center;
+
+justify-content: space-between;
+}
+.banner-left h1,.dark-1{
+font-size: 3.25rem;
+font-weight: bold;
+}
+.banner-left p,.dark-1{
+font-size: 1rem;
+font-weight: 600;
+margin: 16px 0;
+}
+.preebook{
+padding: 10px 56px 10px 24px;
+margin-top: 16px;
+border-radius: 41px;
+display: inline;
+color:rgba(255, 255, 255, 1) ;
+background-color:rgba(224, 44, 109, 1);
+font-size: 1rem;
+font-weight: bold
+
+}
+
+.banner-right{
+background-image: url(images/Circle\ design.svg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+}
+.banner-right img{
+margin: 30px 30px 30px 2px;
+width: 440px;
+height: 414px;
+}
+
+/* main style */
+
+.flex-container{
+border: 5px solid rgb(221, 209, 209);
+max-width: 1110px;
+margin: 0 auto;
+padding: 35px;
+/* margin: 35px 60px; */
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 61px;
+}
+
+
