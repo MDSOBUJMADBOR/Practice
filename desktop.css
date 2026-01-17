@@ -1,0 +1,54 @@
+*{
+          margin: 0;
+          padding: 0;
+}
+body{
+font-family: "Poppins", sans-serif;
+background-color: black;
+}
+
+
+.container{
+background-color: rgb(255, 255, 255);
+max-width: 1440px;
+margin: 0 auto;
+
+}
+/* Dark-1 */
+.dark-1{
+color: #3A3A3A;
+}
+/* Dark-2 */
+.dark-2{
+
+}
+/* header style starts */
+nav,.dark-1{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+nav ul{
+list-style: none;
+display: flex;
+align-items: center;
+}
+nav ul li{
+
+margin: 0 34px;
+}
+nav ul a{
+text-decoration: none;
+font-size: 1rem;
+}
+nav ul li button{
+border: none;
+background-color: transparent;
+height: 24px;
+width: 24px;
+padding: 2px;
+}
+
+/* banner style */
